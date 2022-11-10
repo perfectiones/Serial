@@ -1,0 +1,54 @@
+
+
+header{
+    border-bottom: 2px solid black;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header__logo{
+        position: relative;
+        background-image: url("../img/logo/logo.png");
+        background-size: 100%;
+        
+        width: 270px;
+        height: 70px;
+
+        img{
+            cursor: pointer;
+            width: 270px;
+            height: 70px;
+            
+            }
+        label{
+            position: absolute;
+            bottom: -5%;
+            right: -22%;
+
+
+        }
+    } 
+    
+    
+
+    .item__list{
+        ul{
+
+            display: flex;
+
+            gap: 25px;
+            @media (max-width:768px) {
+                display: none;
+            }
+            li{
+                cursor: pointer;
+
+            }
+                            
+        }
+        
+    }
+
+}
