@@ -3,8 +3,6 @@ import trailer from "../video/theLastOfUsTrailer.mp4";
 import { useRef } from "react";
 import React, { useState } from "react";
 
-// Import Swiper styles
-import "swiper/css";
 
 function Main() {
 

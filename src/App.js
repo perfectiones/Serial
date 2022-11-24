@@ -1,19 +1,16 @@
 
 import './css/null.css'
 import './css/bootstrap.min.css';
-import Header from "./components/Header.js";
-import Main from './components/Main';
-import "../src/components/sliders.js";
+import MainPage from './components/MainPage';
 
 
 function App() {
   
   return (
+    
       <div>
-        <Header/>
-        <Main/>
+        <MainPage />
       </div>
-      
 
   );
   
