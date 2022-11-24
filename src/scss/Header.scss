@@ -15,7 +15,10 @@ header{
         
         width: 270px;
         height: 70px;
-
+        @media (max-width:768px) {
+            width: 235px;
+            height: 55px;
+        }
         img{
             cursor: pointer;
             width: 270px;
@@ -30,7 +33,14 @@ header{
 
         }
     } 
-    
+    .header__item{
+        display: flex;
+        justify-content: end;
+
+        @media (max-width:768px) {
+            display: none;
+        }
+    }
     
 
     .item__list{
@@ -46,9 +56,66 @@ header{
                 cursor: pointer;
 
             }
-                            
+            #episode{
+                position: relative;
+                
+
+
+
+                div{
+                    opacity: 0;
+
+
+                    visibility: hidden;
+                    position: absolute;
+                    right: 0%;
+                    width: max-content;
+
+                    background-color: grey;
+                    p:hover{
+                        color: #eee;
+                    }
+                }
+            }    
+            #episode:hover{
+
+                div{
+
+                    transition-duration: 0.3s;
+                    visibility: visible;
+                    opacity: 1;
+
+                }
+            }          
         }
         
     }
+    .header__burger{
+        display: none;
 
+        
+        @media (max-width:768px) {
+            display: block;
+        }
+
+
+        .burger__wrapper{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            height: 35px;
+            width: 30px;
+
+            span{
+            display: block;
+
+            width: 30px;
+            height: 6px;
+            background-color: black;
+        }
+        }
+        
+        
+    }
 }
