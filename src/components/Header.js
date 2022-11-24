@@ -37,6 +37,9 @@ function Header() {
 
                 </div>
             </div>
+            <div className='burger__menu open__menu'>
+
+            </div>
         </header>
     )
 }

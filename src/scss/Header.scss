@@ -17,7 +17,7 @@ header{
         height: 70px;
         @media (max-width:768px) {
             width: 235px;
-            height: 55px;
+            height: 65px;
         }
         img{
             cursor: pointer;
@@ -118,4 +118,32 @@ header{
         
         
     }
+}
+
+
+.burger__wrapper:hover{
+
+
+
+    .burger__menu{
+        transition-duration: 0.5s;
+
+        left: 0%;
+    }
+
+}
+
+
+.open__menu {
+    left: 0%;
+}
+
+.burger__menu{
+    position: absolute;
+    left: -100%;
+    top: 0%;
+    height: 100vh;
+    width: 80vw;
+
+    background-color: black;
 }
