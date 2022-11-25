@@ -1,9 +1,13 @@
 .actor__wrapper{
-    margin: 20px 0;
+   .item{
 
-    border: 1px solid black;
+    margin: 30px 0 15px 0;
+   }
+    .actor{
+        padding: 20px;
+        border: 1px solid black;
+    }
 
-    
     .actor__photo{
 
         width: 150px;

@@ -1,4 +1,4 @@
-
+import { Routes , Route } from 'react-router-dom';
 import './css/null.css'
 import './css/bootstrap.min.css';
 import MainPage from './components/MainPage';
@@ -10,9 +10,15 @@ import './scss/actors/ActorsList.scss';
 function App() {
   
   return (
-    
-      //<MainPage />
-      <Actors />
+      <>
+
+        <Routes>
+          <Route path='/' element={ <MainPage /> } />
+          <Route path='/Actors' element={ <Actors /> } />
+        </Routes>
+
+      </>
+      
       
 
   );
