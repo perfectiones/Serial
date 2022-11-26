@@ -2,12 +2,11 @@ import "../scss/Main.scss";
 import trailer from "../video/theLastOfUsTrailer.mp4";
 import { useRef } from "react";
 import React, { useState } from "react";
-import ReactPlayer from "react-player";
-import ControlsVideo from "./ControlsVideo";
 import '../scss/video/Video.scss';
+import Video from "./MainPage/Video";
 
 function Main() {
-
+  
   
   return (
     <main className="container content">
@@ -31,14 +30,8 @@ function Main() {
       <div className="col-12 d-flex justify-content-center">
       <div className="videoWrapper">
 
-      <ReactPlayer 
-        url={trailer}
+      <Video />
 
-        controls = {false}
-
-      />
-
-      <ControlsVideo />
       </div>
             
         </div>

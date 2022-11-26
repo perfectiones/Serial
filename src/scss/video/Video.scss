@@ -12,3 +12,53 @@
     
     background-color: yellow;
 }
+.videoControlsPlay{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50, -50%);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40px;
+    height: 40px;
+
+    background-color: yellow;
+}
+
+.videoControlsProgress{
+    width: 100%;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+   
+}
+.videoControlsProgress::-webkit-slider-runnable-track {
+   
+    display: flex;
+    align-items: center;
+
+    background-color: black;
+}
+
+.videoControlsProgress::-webkit-slider-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+
+
+    cursor: pointer;
+    background-color: red;
+
+    -webkit-appearance: none;
+}
+.videoControls__header{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
