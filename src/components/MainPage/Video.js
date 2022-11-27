@@ -47,22 +47,27 @@ const Video = () => {
     const handleFullScreen = () => {
         screenfull.toggle(refPlayerContainer.current)
     }
+
     return (
-        <div className="videoWrapper" ref={refPlayerContainer}>
-            <ReactPlayer 
+        <div className="videoWrapper"
+            ref={refPlayerContainer}
+            >
+
+            <ReactPlayer
                 url={trailer}
                 width='100%'
                 height='auto'
                 controls = {false}
-
                 playing={playing}
                 volume={volume}
                 ref={refPlayer}
                 onProgress={handleProgress}
-                onDuration={handleDuration} 
-            />
+                onDuration={handleDuration}
 
+            />
+            
             <ControlsVideo 
+
                 handlePlay = {handlePlay}
                 playing={playing}
                 volume = {volume}

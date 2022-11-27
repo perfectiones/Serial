@@ -1,6 +1,25 @@
+
+
+
 .videoWrapper{
     position: relative;
+    
+}
 
+/*.videoWrapper:hover{
+    
+    .videoControls{
+        transition-duration: 0.3s;
+        opacity: 1;
+    }
+}*/
+
+.videoWrap{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 10%
 }
 .videoControls{
     position: absolute;
@@ -8,9 +27,11 @@
     bottom: 0;
     left: 0;
     right: 0;
-    height: 40px;
+    height: 55px;
     
-    background-color: yellow;
+    background-color: black;
+    opacity: 0.7;
+    padding: 5px 5px;
 }
 .videoControlsPlay{
     position: absolute;
@@ -25,40 +46,90 @@
     width: 40px;
     height: 40px;
 
-    background-color: yellow;
+    .play{
+        width: 100%;
+        height: 100%;
+
+        opacity: 0.7;
+        background-image: url('../../img/videoPlayer/play.svg');
+    }
+    .pause{
+        width: 100%;
+        height: 100%;
+
+        opacity: 0.7;
+        background-image: url('../../img/videoPlayer/pause.svg');
+    }
+}
+
+.progressBar{
+    position: absolute;
+    top: 0%;
+
+    height: 7px;
+    background-color: red;
+}
+
+
+.progressWrap{
+    position: relative;
+
 }
 
 .videoControlsProgress{
+    position: relative;
     width: 100%;
+    display: block;
+    z-index: 100;
+    opacity: 0.3;
 
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    
-   
+    border-radius: 5px;
+    background-color: black;
 }
 .videoControlsProgress::-webkit-slider-runnable-track {
    
     display: flex;
     align-items: center;
 
-    background-color: black;
+    background-color: grey;
 }
 
 .videoControlsProgress::-webkit-slider-thumb {
     width: 15px;
-    height: 15px;
+    height: 7px;
     border-radius: 50%;
 
+    opacity: 0;
 
     cursor: pointer;
     background-color: red;
 
     -webkit-appearance: none;
 }
+
+
+
+
+
 .videoControls__header{
 
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 5px;
+
+    margin-top: 5px;
+
+    .time{
+        color: white;
+    }
+    .header__start{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        
+    }
 }
